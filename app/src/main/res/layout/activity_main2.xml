@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.171" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/addbttn"
         android:layout_width="171dp"
         android:layout_height="58dp"
         android:layout_marginStart="112dp"
@@ -97,21 +97,7 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="359dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="Symptom Title"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.316" />
-
-    <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/symptomDescription"
         android:layout_width="361dp"
         android:layout_height="104dp"
         android:ems="10"
@@ -120,78 +106,89 @@
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintVertical_bias="0.454" />
 
     <EditText
-        android:id="@+id/editTextDate8"
-        android:layout_width="361dp"
-        android:layout_height="69dp"
+        android:id="@+id/symptomTitle"
+        android:layout_width="359dp"
+        android:layout_height="43dp"
         android:ems="10"
-        android:hint="End Date"
-        android:inputType="date"
+        android:hint="Symptom Title"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351" />
 
     <EditText
-        android:id="@+id/editTextNumberSigned"
+        android:id="@+id/startTime"
         android:layout_width="361dp"
         android:layout_height="45dp"
         android:ems="10"
-        android:hint="Severity (1-low, 10-high)"
-        android:inputType="numberSigned"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.532" />
-
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="359dp"
-        android:layout_height="41dp"
-        android:ems="10"
         android:hint="Start Time"
-        android:inputType="time"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.698" />
 
     <EditText
-        android:id="@+id/editTextTime2"
-        android:layout_width="359dp"
-        android:layout_height="41dp"
+        android:id="@+id/startDate"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Start Date (dd/mm/yy)"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="End Date (dd/mm/yy)"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.763" />
+
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="End Time"
-        android:inputType="time"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.863" />
-
-    <EditText
-        android:id="@+id/editTextDate7"
-        android:layout_width="361dp"
-        android:layout_height="69dp"
-        android:ems="10"
-        android:hint="Start Date"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.628" />
+        app:layout_constraintVertical_bias="0.829" />
+
+    <EditText
+        android:id="@+id/severity"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Severity (1-10)"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
